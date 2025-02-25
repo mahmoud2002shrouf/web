@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+header .profile h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+header .profile p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+header .contact-info {
+    text-align: right;
+    font-size: 1em;
+    color: #555;
+}
+
+header .contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+header .contact-info a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skill-item {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #555;
+}
+
+.job h3 {
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.job p {
+    font-size: 1em;
+    color: #777;
+}
+
+.job ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.job li {
+    margin: 5px 0;
+}
+
