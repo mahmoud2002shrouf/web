@@ -1,71 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Hisham Shanak - CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>نموذج فخم</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f7fa;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="profile">
-                <h1>Omar Hisham Shanak</h1>
-                <p>IT Specialist | Full Stack Enthusiast</p>
+
+<body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto my-12 bg-gradient-to-b from-gray-50 to-white p-1 rounded-2xl shadow-xl">
+        <div class="bg-white p-8 rounded-xl border border-gray-100">
+
+
+            <!-- First Table with Luxury Design -->
+            <div class="mb-10">
+                <div class="overflow-hidden rounded-xl shadow-lg border border-gray-100">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr style="background: linear-gradient(to right, #4f46e5, #7e22ce);" class="text-white">
+                                <th class="p-4 font-semibold text-left border-r border-indigo-500">Left</th>
+                                <th class="p-4 font-semibold text-center border-r border-indigo-500">Center</th>
+                                <th class="p-4 font-semibold text-right">Right</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white hover:bg-indigo-50 transition duration-200">
+                                <td class="p-4 text-left border-r border-gray-200">Text on the left</td>
+                                <td class="p-4 text-center border-r border-gray-200">Text in the center</td>
+                                <td class="p-4 text-right">Text on the right</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:omar.shanak.dev@gmail.com">omar.shanak.dev@gmail.com</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/omarshanak" target="_blank">omarshanak</a></p>
+
+            <!-- Second Table with Luxury Design -->
+            <div class="mb-10">
+                <div class="overflow-hidden rounded-xl shadow-lg border border-gray-100">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr style="background: linear-gradient(to right, #7e22ce, #4f46e5);" class="text-white">
+                                <th class="p-4 font-semibold text-center border-r border-purple-500">Top</th>
+                                <th class="p-4 font-semibold text-center border-r border-purple-500">Middle</th>
+                                <th class="p-4 font-semibold text-center">Bottom</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white hover:bg-purple-50 transition duration-200">
+                                <td class="p-4 border-r border-gray-200">Text at the top</td>
+                                <td class="p-4 border-r border-gray-200">Text in the middle</td>
+                                <td class="p-4">Text at the bottom</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </header>
 
-        <main>
-            <section class="about">
-                <h2>About Me</h2>
-                <p>I am an IT specialist with a strong passion for full stack development, blending mobile and web technologies to craft smart, user-focused applications. I thrive in Linux environments, particularly Fedora, and constantly explore new frameworks and tools. My journey is driven by curiosity, efficiency, and a relentless pursuit of clean code and smooth performance.</p>
-            </section>
-
-            <section class="skills">
-                <h2>Skills</h2>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <strong>Frontend:</strong> HTML, CSS, JavaScript, Vue.js
+            <!-- Arabic Interests Section -->
+            <div class="mb-10 bg-gradient-to-r from-gray-50 to-indigo-50 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-6 text-indigo-900">اختر اهتماماتك</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <input type="checkbox" id="sports"
+                            class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded cursor-pointer">
+                        <label for="sports"
+                            class="text-gray-700 text-lg hover:text-indigo-800 cursor-pointer">الرياضة</label>
                     </div>
-                    <div class="skill-item">
-                        <strong>Backend:</strong> Django, Node.js, RESTful APIs
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <input type="checkbox" id="reading"
+                            class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded cursor-pointer">
+                        <label for="reading"
+                            class="text-gray-700 text-lg hover:text-indigo-800 cursor-pointer">القراءة</label>
                     </div>
-                    <div class="skill-item">
-                        <strong>Mobile:</strong> Flutter, Firebase
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <input type="checkbox" id="travel"
+                            class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded cursor-pointer">
+                        <label for="travel"
+                            class="text-gray-700 text-lg hover:text-indigo-800 cursor-pointer">السفر</label>
                     </div>
-                    <div class="skill-item">
-                        <strong>Other:</strong> Linux (Fedora), Git, Docker, Bash Scripting
+                    <div class="flex items-center space-x-3 space-x-reverse">
+                        <input type="checkbox" id="music"
+                            class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded cursor-pointer">
+                        <label for="music"
+                            class="text-gray-700 text-lg hover:text-indigo-800 cursor-pointer">الموسيقى</label>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="experience">
-                <h2>Experience</h2>
-                <div class="job">
-                    <h3>IT Consultant & Developer</h3>
-                    <p><em>Freelance & Collaborations</em></p>
-                    <ul>
-                        <li>Developed full-stack solutions for small businesses and startups.</li>
-                        <li>Designed and deployed mobile-first applications with Flutter and Vue.js.</li>
-                        <li>Automated system tasks and server configurations using shell scripting.</li>
-                        <li>Provided IT support and custom software solutions to local clients.</li>
-                    </ul>
+            <!-- Arabic Country Selection -->
+            <div class="mb-10 bg-gradient-to-r from-gray-50 to-purple-50 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-6 text-purple-900">اختر دولتك</h3>
+                <div class="flex items-center">
+                    <label for="country" class="text-gray-700 font-medium ml-2 text-lg">الدولة:</label>
+                    <select id="country"
+                        class="bg-white border border-gray-300 rounded-lg py-3 px-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-gray-700 appearance-none pr-12 pl-4"
+                        style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\"
+                        http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"
+                        stroke=\"%236b7280\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">
+                        <path d=\"M6 9l6 6 6-6\" /></svg>'); background-repeat: no-repeat; background-position: left
+                        12px center;">
+                        <option>-- اختر --</option>
+                        <option>مصر</option>
+                        <option>السعودية</option>
+                        <option>الإمارات</option>
+                        <option>قطر</option>
+                    </select>
                 </div>
-            </section>
+            </div>
 
-            <section class="education">
-                <h2>Education</h2>
-                <div class="edu-item">
-                    <h3>Information Technology</h3>
-                    <p><em>Palestine Polytechnic University</em></p>
-                    <p>Pursuing a Bachelor's degree in Information Technology, currently in the final semester with a focus on practical, hands-on system and software development.</p>
+            <!-- Form Example -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">This is form Example</h2>
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden">
+                    <div class="px-6 py-4" style="background: linear-gradient(to right, #4f46e5, #7e22ce);">
+                        <h3 class="font-bold text-white text-lg">Basic Information</h3>
+                    </div>
+                    <div class="p-6 space-y-6">
+                        <div>
+                            <input type="text" placeholder="Enter user name"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-gray-50 text-gray-800" />
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Enter password"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-gray-50 text-gray-800" />
+                        </div>
+
+                        <div class="flex items-center space-x-6 space-x-reverse">
+                            <span class="text-gray-700 font-medium">Gender:</span>
+                            <div class="flex items-center">
+                                <input type="radio" id="male" name="gender"
+                                    class="h-5 w-5 text-indigo-600 focus:ring-indigo-500" />
+                                <label for="male" class="mr-2 text-gray-700">Male</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="female" name="gender"
+                                    class="h-5 w-5 text-indigo-600 focus:ring-indigo-500" />
+                                <label for="female" class="mr-2 text-gray-700">Female</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Major:</label>
+                            <select
+                                class="w-full bg-gray-50 border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none pr-12"
+                                style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\"
+                                http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"
+                                fill=\"none\" stroke=\"%236b7280\" stroke-width=\"2\" stroke-linecap=\"round\"
+                                stroke-linejoin=\"round\">
+                                <path d=\"M6 9l6 6 6-6\" /></svg>'); background-repeat: no-repeat; background-position:
+                                left 12px center;">
+                                <option>Digital Management</option>
+                                <option>Computer Science</option>
+                                <option>Information Technology</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Upload your CV:</label>
+                            <div class="flex items-center justify-center w-full">
+                                <label
+                                    class="flex flex-col items-center px-4 py-6 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-lg shadow-lg tracking-wide uppercase border border-indigo-500 cursor-pointer hover:from-indigo-600 hover:to-purple-600 transition duration-300">
+                                    <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                                    </svg>
+                                    <span class="mt-2 text-base leading-normal">اختر ملف</span>
+                                    <input type='file' class="hidden" />
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4 space-x-reverse pt-4">
+                            <button
+                                class="px-6 py-3 bg-white text-gray-700 rounded-lg border border-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 transition duration-300 font-medium">
+                                مسح
+                            </button>
+                            <button
+                                class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300 font-medium">
+                                إرسال
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
